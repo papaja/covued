@@ -10,6 +10,7 @@ const { Server } = require("http");
     await execa("npm", ["run", "build"]);
     // Understand if it's dist or build folder
     const folderName = fs.existsSync("dist") ? "dist" : "build";
+    await fs.copyFile(folderName+"/index.html", folderName+"/404.html", (err) => {console.log(err)});
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
     await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
     console.log("Pushing to gh-pages...");
