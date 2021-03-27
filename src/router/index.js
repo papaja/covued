@@ -17,7 +17,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  base: publicPath,
+  base: process.env.BASE_URL,
   routes,
 });
 
