@@ -30,6 +30,6 @@ header, main, footer {
 }
 
 .p-autocomplete {
-    display: block;
+    display: block !important;
     margin-bottom: 2em;
 }

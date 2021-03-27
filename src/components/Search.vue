@@ -8,7 +8,7 @@
     @item-unselect="onItemSelect($event)"
     field="name"
     :placeholder=placeholder
-    forceSelection=true
+    :forceSelection="true"
   />
 </template>
 
