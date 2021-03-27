@@ -2,15 +2,17 @@ import { createWebHistory, createRouter } from "vue-router";
 import Table from "@/components/Table.vue";
 import Chart from "@/components/Chart.vue";
 
+let baseUrl = process.env.BASE_URL;
+
 const routes = [
   {
-    path: "/",
-    name: "Table",
+    path: baseUrl,
+    name: "table",
     component: Table,
   },
   {
-    path: "/chart",
-    name: "Chart",
+    path: baseUrl  + "chart",
+    name: "chart",
     component: Chart,
   },
 ];

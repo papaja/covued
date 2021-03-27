@@ -15,8 +15,6 @@ export default {
   },
   methods: {
     async loadCountries() {
-      console.log(process.env.NODE_ENV);
-      console.log(process.env.BASE_URL);
       let results = await fetchCountries();
       
       let countries = results.map((c) => ({

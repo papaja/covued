@@ -1,7 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/covued/'
-    : '/',
+    publicPath: '/covued/',
     chainWebpack: (config) => {
         config.module
             .rule("images")

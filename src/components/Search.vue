@@ -27,7 +27,7 @@ export default {
   },
   computed:{
     placeholder(){
-      return this.selectedCountries.length > 0 ? "" : "Search for countries to filter data";
+      return (this.selectedCountries && this.selectedCountries.length > 0) ? "" : "Search for countries to filter data";
     }
   },
   methods: {
