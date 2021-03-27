@@ -61,7 +61,7 @@ export default {
 
             return accumulator;
           },
-          ["SUM", 0, 0, 0]
+          ["TOTALS", 0, 0, 0]
         );
       return s;
     },
